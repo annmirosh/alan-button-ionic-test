@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { TabsPage } from './tabs.page';
     FormsModule,
     TabsPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [TabsPage],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class TabsPageModule {}
